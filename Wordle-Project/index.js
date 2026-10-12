@@ -83,7 +83,7 @@ submitButton.addEventListener("click", function() {
         submitButton.disabled = true;
     } else if (attempts === 6) {
         message.textContent = "You Lose! Word: " + word;
-        button.disabled = true;
+        submitButton.disabled = true;
     } else {
         message.textContent = "Attempts left: " + (6 - attempts);
     }
