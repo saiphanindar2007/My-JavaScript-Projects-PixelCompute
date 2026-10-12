@@ -17,4 +17,5 @@ plusButton.addEventListener('click', function(){
     note.appendChild(text);
     note.appendChild(button);
     notes.appendChild(note);
+    noteInput.value = "";
 });
