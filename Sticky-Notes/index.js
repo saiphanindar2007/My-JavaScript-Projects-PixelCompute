@@ -11,6 +11,13 @@ plusButton.addEventListener('click', function(){
     text.textContent = noteInput.value;
     let button = document.createElement('button');
     button.textContent = "X";
+    noteNo++;
+    if(noteNo % 2 == 0){
+        note.style.cssText = "background-color: lightyellow; padding: 10px; margin: 10px; width: 180px; display: inline-block;";
+    }
+    if(noteNo % 2 != 0){
+        note.style.cssText = "background-color: lightpink; padding: 10px; margin: 10px; width: 180px; display: inline-block;";
+    }
     button.addEventListener('click', function(){
         note.remove();
     });
